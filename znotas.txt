@@ -1,0 +1,49 @@
+Movidas especiales labs
+sudo systemctl restart postgresql
+
+python3 manage.py runserver 8001 //El 8000 esta ocupao
+
+psql nombreDDatebeis -U alumnodb -c "SELECT * FROM some_table" >> resultado.txt
+
+ACER 1 XANGO
+mkdir django_projects
+cd django_projects
+
+django-admin startproject locallibrary
+cd locallibrary
+
+python3 manage.py startapp catalog
+En settings.py
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    # Add our new application
+    'catalog.apps.CatalogConfig', #This object was created for us in /catalog/apps.py
+]
+
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+
+export DJANGO_SUPERUSER_EMAIL=alumnodb@alumnodb.com
+export DJANGO_SUPERUSER_USERNAME=alumnodb
+export DJANGO_SUPERUSER_PASSWORD=alumnodb
+
+python3 manage.py createsuperuser --noinput || echo esta creado
+
+
+VUE
+npm install vue@3.2.27
+
+npm init vue@3.2 theVueProject
+
+cd theVueProject
+
+npm install
+npm run dev
+
+xatgpt
